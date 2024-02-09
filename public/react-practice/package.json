@@ -1,0 +1,24 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "description": "this is for react practice",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aasifmaniyar/react-learning.git"
+  },
+  "keywords": [
+    "react",
+    "aasif",
+    "maniyar"
+  ],
+  "author": "aasif maniyar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aasifmaniyar/react-learning/issues"
+  },
+  "homepage": "https://github.com/aasifmaniyar/react-learning#readme"
+}
