@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sample flexbox</title>
+    <style>
+        .flex-row {
+            display: flex;
+            /* wrap will wrap elements from top right corner */
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: blueviolet;
+        }
+
+        .flex-column {
+            display: inline-flex;
+            gap: 10px;
+            background-color: red;
+        }
+
+        .flex-basis-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-basis-row h3 {
+            background-color: green;
+            flex-basis: 100px;
+        }
+
+        .flex-basis-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-basis-column h3 {
+            background-color: yellow;
+            flex-basis: 100px;
+        }
+        .flex-wrap-reverse{
+            display: flex;
+            /* flex reverse will wrap item from bottom right corner */
+            flex-wrap: wrap-reverse; 
+            background-color: aqua;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-row">
+        <h3 class="sample1">sample1</h3>
+        <h3 class="sample2">sample2</h3>
+        <h3 class="sample3">sample3</h3>
+        <h3 class="sample4">sample4</h3>
+    </div>
+    <div class="flex-column">
+        <h3 class="item1">item1</h3>
+        <h3 class="item2">item2</h3>
+        <h3 class="item3">item3</h3>
+        <h3 class="item4">item4</h3>
+    </div>
+    <div class="flex-basis-row">
+        <h3 class="item1">item1</h3>
+        <h3 class="item2">item2</h3>
+        <h3 class="item3">item3</h3>
+        <h3 class="item4">item4</h3>
+    </div>
+    <div class="flex-basis-column">
+        <h3 class="item1">item1</h3>
+        <h3 class="item2">item2</h3>
+    </div>
+    <div class="flex-wrap-reverse">
+        <h3 class="sample1">sample1</h3>
+        <h3 class="sample2">sample2</h3>
+        <h3 class="sample3">sample3</h3>
+        <h3 class="sample4">sample4</h3>
+    </div>
+</body>
+
+</html>

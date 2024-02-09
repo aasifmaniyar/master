@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+     .blue-box {
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      /* position relative to upper left corner */
+      position: relative;
+      top: 10px;
+      left: 200px;
+    }
+    .red-circle {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      /* position relative to the parent element which is blue box */
+      position: absolute;
+      top: 50px;
+      left: 150px;
+    }
+
+    .flag {
+      width: 500px;
+      height: 300px;
+      /* position relative to upper left corner */
+      position: relative;
+    }
+    .saffron { /*can also use: .flag > .saffron or div > .saffron*/
+        width: 150px;
+        height: 30px;
+        background-color: rgb(245, 81, 17);
+      }
+
+      .white {
+        width: 150px;
+        height: 20px;
+        background-color: white;
+      }
+
+      .green {
+        width: 150px;
+        height: 30px;
+        background-color: green;
+        margin-top: 10px;
+      }
+    img {  /*can aslo use : .flag img*/
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 60px;;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <div class="saffron"></div>
+    <img src="../../assets/images/ashokchakra.png" alt="Ashok Chakra" />
+    <div class="white"></div>
+    <div class="green"></div>
+  </div>
+  <div class="blue-box">
+    <div class="red-circle"></div>
+  </div>
+</body>
+
+</html>

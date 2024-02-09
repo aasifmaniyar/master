@@ -1,0 +1,1 @@
+// write sample code for all promise APIs.

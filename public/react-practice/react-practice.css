@@ -1,0 +1,13 @@
+#root, #sampleroot, #sampleroot1 {
+    color: red;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+#root1 {
+    color : blue;
+    display: flex;
+    justify-content: center;
+}
