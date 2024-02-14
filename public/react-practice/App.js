@@ -1,26 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// sample 
-const heading = React.createElement("h1", {}, "hello world from react");  //creating heading tag
-const subheading = React.createElement("h3", {}, "this is journey of react");
-console.log(heading); // here heading is object.
+// add image, anchor tag in JSX.
+// const heading = (<h1 id="heading" className="class-heading">This is using JSX</h1>);
 
-const root = ReactDOM.createRoot(document.getElementById("sampleroot")); //creating root to inject heading tag
-const root1 = ReactDOM.createRoot(document.getElementById("sampleroot1"));
-root.render(heading); //injecting heading tag inside root. 
-root1.render(subheading);
+//reactElement
+// const heading = <h1>this is react component</h1>
 
-const nestedHeading = React.createElement("div", {id:"parent"}, 
-React.createElement("div", {id:"child"}, 
-React.createElement("h1", {id: "heading1"}, "This is h1 tag inside another div ie., nested h1")));
 
-const nestedroot = ReactDOM.createRoot(document.getElementById("root"));
+//functional component, start with capital letter
+function Title() {  //this is by using normal function
+return <h1 className="jsx-functional-component">JSX with functional component</h1>;
+}
 
-nestedroot.render(nestedHeading);
+const title = <h3>putting reactElement inside component</h3>
+const title1 = <div>{<h1>React element inside react element</h1>}{title}</div>
+const abc = "Aasif"
+const SubTitle = () => ( //this is by using arrow function and without cusrly braces.
+    <div>
+        <Title />   {/* component composition */}
+        {abc}   {/*We can write any JS code here */}
+        {title1}   {/* title is an reactElement */}
+        <h2>component composition in React functional component</h2>
+    </div>
+);
 
-const siblingHeadings = React.createElement("div", {id: "parent"}, 
-[React.createElement("div", {id: "child1"}, React.createElement("h1", {}, "This is first sibling h1")), 
-React.createElement("div", {id: "child2"}, React.createElement("h1", {}, "This is second sibling h1"))]);
 
-const siblingRoot = ReactDOM.createRoot(document.getElementById("root"));
-siblingRoot.render(siblingHeadings);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);  //this is to render reactElement
+root.render(<SubTitle />); // this is to render functional component
+
+
