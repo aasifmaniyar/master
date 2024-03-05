@@ -5,3 +5,4 @@
 // get sum and max values from array write reduce with arrow function 
 
 // work with array of objects.
+console.log("hello world");

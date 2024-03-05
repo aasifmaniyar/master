@@ -1,13 +1,54 @@
-#root, #sampleroot, #sampleroot1 {
-    color: red;
-    font-size: larger;
-    font-family:'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: center;
-}
-
 #root1 {
     color : blue;
     display: flex;
     justify-content: center;
+}
+
+.app-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-container > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul > li {
+    margin: 10px;
+    padding: 5px;
+}
+
+button, input{
+    padding: 2px;
+    margin: 2px;
+}
+
+.search-container {
+    padding : 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant-card{
+    padding : 5px;
+    margin: 10px;
+    width: 200px;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+.restaurant-card > img {
+    width: 100%;
+}
+
+.res-list {
+    display: flex;
+    flex-wrap: wrap;
 }
