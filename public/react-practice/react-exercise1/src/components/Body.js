@@ -18,7 +18,7 @@ const Body = () => {
             // unable to use live api due to CORS issue.
 
             setListOfRestaurant(restaurantList);   // update data for re-rendering when useEffect is executed.
-            setfilteredList(restaurantList);  //
+            setfilteredList(restaurantList);  // this is used for updated list lists only.
     }
 
     if(listOfRestaurant.length === 0) {
